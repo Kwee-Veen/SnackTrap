@@ -1,4 +1,4 @@
-# SnackTrap
+# SnackTrap - IoT Networked Device Project
 # Caoimhín Arnott, 20104296
 
 # Project description:
@@ -15,10 +15,10 @@ The noise may also raise an alarm in the house - innocent housemates drawn by th
 
 # Tools, Technologies and Equipment
 
-RPi v4 
-SenseHAT - joystick and LED matrix
-Motion sensor (or light sensor on SenseHAT, depending)
-Power bank for mobile power
+RPi v4, 
+SenseHAT - joystick and LED matrix, 
+Motion sensor (or light sensor on SenseHAT, depending), 
+Power bank for mobile power.
 
 # Write a list of things you propose to use in your work. This can be hardware, programming languages etc.
 
