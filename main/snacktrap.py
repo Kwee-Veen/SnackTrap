@@ -147,6 +147,7 @@ def toggle_on_check():
 
 # Function that checks light levels. If above '5', triggers the alarm state & pushes data to Blynk & Firebase
 def light_check():
+    uploadCounter = 1
     global breakout
     global alarm
     global light
@@ -168,11 +169,14 @@ def light_check():
             if countdown <= 0:
                 while True:
                     alarm = 1
-                    blynk.run()
-                    blynk.virtual_write(0, alarm)
-                    https_event("alarm")
-                    sendAlarmToFirebase.alarm_event()
+                    if uploadCounter == 1:
+                        blynk.run()
+                        blynk.virtual_write(0, alarm)
+                        https_event("alarm")
+                        sendAlarmToFirebase.alarm_event()
+                        uploadCounter = 0
                     toggle_off_check()
+                    blynk.run()
                     if breakout == 1:
                         break
                     if alternator == 0:
