@@ -29,3 +29,5 @@ The device's events, including device alarm, armed and disarmed state changes, a
 These events are triggered by HTTP requests sent from the device to the Blynk platform upon state changes.
 Reviewing the device's Timeline provides a full history of events, with alarms emphasised as Warning events.
 An additional copy of JSON data highlight the time of the event is sent to Firebase, serving as a backup of events and facilitating further data processing available if desired.
+
+![SnackTrap](https://github.com/Kwee-Veen/SnackTrap/assets/118535981/247a2dc6-28d4-4078-ab6d-c8d366b7e2c6)
