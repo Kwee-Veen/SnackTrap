@@ -137,7 +137,7 @@ def toggle_on_check():
                                     breakout = 1
                                 elif y.direction == "up" and y.action == "pressed":
                                     sense.show_message("Arming        ", scroll_speed = 0.080, text_colour=[255, 0, 0])
-                                    armed = 1
+                                    armed = "1"
                                     blynk.run()
                                     blynk.virtual_write(2, armed)
                                     https_event("alarm_armed")
@@ -206,7 +206,7 @@ while True:
     if readings > 9:
         light = sense.colour.colour[3]
         print(f"Light: {light}")
-        if armed == 1:
+        if armed == "1":
             light_check()
         blynk.run()
         blynk.virtual_write(0, alarm)
