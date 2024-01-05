@@ -206,7 +206,7 @@ while True:
     if readings > 9:
         light = sense.colour.colour[3]
         print(f"Light: {light}")
-        if armed == "1":
+        if armed == 1:
             light_check()
         blynk.run()
         blynk.virtual_write(0, alarm)
